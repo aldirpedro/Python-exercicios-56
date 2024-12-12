@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .exercicio {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .exercicio h2 {
+            color: #007BFF;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+        .resposta {
+            background-color: #e9f7f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercícios de Programação em Python</h1>
+
+        <div class="exercicio">
+            <h2>1. Contar os Caracteres em uma String</h2>
+            <p>Escreva um código Python que conte a quantidade de caracteres em uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print("A string tem", len(string), "caracteres.")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A string tem 18 caracteres.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>2. Converter String para Maiúsculas</h2>
+            <p>Escreva um código Python que converta uma string para maiúsculas.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print(string.upper())
+            </pre>
+            <div class="resposta">
+                <p>Resposta: EXEMPLO DE STRING</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>3. Converter String para Minúsculas</h2>
+            <p>Escreva um código Python que converta uma string para minúsculas.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print(string.lower())
+            </pre>
+            <div class="resposta">
+                <p>Resposta: exemplo de string</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>4. Contar Ocorrências de um Caracter</h2>
+            <p>Escreva um código Python que conte quantas vezes um caractere específico aparece em uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+caracter = 'e'
+print("O caractere", caracter, "aparece", string.count(caracter), "vezes.")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O caractere e aparece 2 vezes.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>5. Verificar se uma Palavra está na Frase</h2>
+            <p>Escreva um código Python que verifique se uma palavra está presente em uma frase.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "Exemplo de string"
+palavra = "de"
+if palavra in frase:
+    print(f'A palavra "{palavra}" está na frase.')
+else:
+    print(f'A palavra "{palavra}" não está na frase.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A palavra "de" está na frase.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>6. Substituir Palavras em uma Frase</h2>
+            <p>Escreva um código Python que substitua uma palavra por outra em uma frase.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "Exemplo de string"
+nova_frase = frase.replace("string", "texto")
+print(nova_frase)
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Exemplo de texto</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>7. Reverter uma String</h2>
+            <p>Escreva um código Python que reverta uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print(string[::-1])
+            </pre>
+            <div class="resposta">
+                <p>Resposta: gnirts ed olpmE</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>8. Dividir uma Frase em Palavras</h2>
+            <p>Escreva um código Python que divida uma frase em palavras.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "Exemplo de string"
+palavras = frase.split()
+print(palavras)
+            </pre>
+            <div class="resposta">
+                <p>Resposta: ["Exemplo", "de", "string"]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>9. Capitalizar as Palavras de uma Frase</h2>
+            <p>Escreva um código Python que capitalize a primeira letra de cada palavra de uma frase.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "exemplo de string"
+frase_capitalizada = frase.title()
+print(f'Frase capitalizada: "{frase_capitalizada}"')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Frase capitalizada: "Exemplo De String"</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>10. Remover Espaços em Branco no Início e Fim</h2>
+            <p>Escreva um código Python que remova os espaços em branco no início e no final de uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "   Exemplo de string com espaços   "
+print(string.strip())
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Exemplo de string com espaços</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

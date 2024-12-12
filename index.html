@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo Python</title>
+    <style>
+        :root {
+            --primary-color: #306998;
+            --secondary-color: #FFD43B;
+            --text-color: #2C3E50;
+            --card-bg: #FFFFFF;
+            --highlight-color: #FF5733;
+            --button-bg: #1B4A73;
+            --button-hover-bg: #254e77;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDZtOWZvMTZ1cjFleTAxZWU1dzZueWZnbXR2ZW9waWZ6dTllMzc4eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/coxQHKASG60HrHtvkt/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1B4A73 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin: 40px 0 20px;
+            text-align: center;
+        }
+
+        .btn {
+            background: var(--button-bg);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: var(--button-hover-bg);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .card pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            color: #333;
+            font-size: 1rem;
+            margin: 10px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .highlight {
+            color: var(--highlight-color);
+            font-weight: bold;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }   
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Python: Guia Definitivo</h1>
+        <p>Uma exploração completa da linguagem de programação mais versátil</p>
+    </header>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>Introdução ao Python</h2>
+            <p>Python é uma linguagem de programação de alto nível, fácil de aprender, e muito poderosa. Ela é amplamente utilizada em diversas áreas, como desenvolvimento web, ciência de dados, automação e aprendizado de máquina.</p>
+        </div>
+
+        <div class="grid">
+            <!-- Card 1: Como surgiu o Python -->
+            <div class="card">
+                <img src="guido-van-rossum.jpg" alt="Guido van Rossum">
+                <h2>Como surgiu o Python?</h2>
+                <p>O Python surgiu como um projeto pessoal de <a href="https://en.wikipedia.org/wiki/Guido_van_Rossum" target="_blank">Guido van Rossum</a> no final dos anos 1980, enquanto ele trabalhava no <span class="highlight">CWI</span> em Amsterdã, Holanda.</p>
+            </div>
+
+            <!-- Card 2: Quem criou o Python -->
+            <div class="card">
+                <h2>Quem criou o Python?</h2>
+                <p><span class="highlight">Guido van Rossum</span> foi o criador do Python. Ele liderou o desenvolvimento da linguagem até 2018.</p>
+            </div>
+
+            <!-- Card 3: Onde foi criado o Python -->
+            <div class="card">
+                <h2>Onde foi criado o Python?</h2>
+                <p>O Python foi criado no <span class="highlight">CWI</span>, um centro de pesquisa em Amsterdã, Holanda.</p>
+            </div>
+
+            <!-- Card 4: Quando foi criado o Python -->
+            <div class="card">
+                <h2>Quando foi criado o Python?</h2>
+                <p>O Python começou a ser desenvolvido em 1989 e sua primeira versão oficial foi lançada em 1991.</p>
+            </div>
+
+            <!-- Card 5: Por que o Python foi criado -->
+            <div class="card">
+                <h2>Por que o Python foi criado?</h2>
+                <ul>
+                    <li>Uma linguagem de fácil aprendizado</li>
+                    <li>Alternativa ao ABC</li>
+                    <li>Flexível e suportando múltiplos paradigmas</li>
+                </ul>
+            </div>
+
+            <!-- Card 6: Zen do Python -->
+            <div class="card">
+                <h2>Zen do Python</h2>
+                <ul>
+                    <li>Bonito é melhor que feio</li>
+                    <li>Explícito é melhor que implícito</li>
+                    <li>Simples é melhor que complexo</li>
+                    <li>A legibilidade conta</li>
+                </ul>
+            </div>
+
+            <!-- Card 7: Onde aplicar o Python -->
+            <div class="card">
+                <h2>Onde aplicar o Python?</h2>
+                <ul>
+                    <li>Desenvolvimento web</li>
+                    <li>Ciência de dados</li>
+                    <li>Automação</li>
+                    <li>Aprendizado de máquina e IA</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="teste2.html" class="btn">Ver Exercícios em "Python"
