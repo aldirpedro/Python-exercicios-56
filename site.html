@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .exercicio {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .exercicio h2 {
+            color: #007BFF;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+        .resposta {
+            background-color: #e9f7f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercícios de Programação em Python</h1>
+
+        <div class="exercicio">
+            <h2>1. Contar os Caracteres em uma String</h2>
+            <p>Escreva um código Python que conte a quantidade de caracteres em uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print("A string tem", len(string), "caracteres.")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A string tem 18 caracteres.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>2. Converter String para Maiúsculas</h2>
+            <p>Escreva um código Python que converta uma string para maiúsculas.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print(string.upper())
+            </pre>
+            <div class="resposta">
+                <p>Resposta: EXEMPLO DE STRING</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>3. Converter String para Minúsculas</h2>
+            <p>Escreva um código Python que converta uma string para minúsculas.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print(string.lower())
+            </pre>
+            <div class="resposta">
+                <p>Resposta: exemplo de string</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>4. Contar Ocorrências de um Caracter</h2>
+            <p>Escreva um código Python que conte quantas vezes um caractere específico aparece em uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+caracter = 'e'
+print("O caractere", caracter, "aparece", string.count(caracter), "vezes.")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O caractere e aparece 2 vezes.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>5. Verificar se uma Palavra está na Frase</h2>
+            <p>Escreva um código Python que verifique se uma palavra está presente em uma frase.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "Exemplo de string"
+palavra = "de"
+if palavra in frase:
+    print(f'A palavra "{palavra}" está na frase.')
+else:
+    print(f'A palavra "{palavra}" não está na frase.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A palavra "de" está na frase.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>6. Substituir Palavras em uma Frase</h2>
+            <p>Escreva um código Python que substitua uma palavra por outra em uma frase.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "Exemplo de string"
+nova_frase = frase.replace("string", "texto")
+print(nova_frase)
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Exemplo de texto</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>7. Reverter uma String</h2>
+            <p>Escreva um código Python que reverta uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+print(string[::-1])
+            </pre>
+            <div class="resposta">
+                <p>Resposta: gnirts ed olpmE</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>8. Dividir uma Frase em Palavras</h2>
+            <p>Escreva um código Python que divida uma frase em palavras.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "Exemplo de string"
+palavras = frase.split()
+print(palavras)
+            </pre>
+            <div class="resposta">
+                <p>Resposta: ["Exemplo", "de", "string"]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>9. Capitalizar as Palavras de uma Frase</h2>
+            <p>Escreva um código Python que capitalize a primeira letra de cada palavra de uma frase.</p>
+            <pre>
+# Exemplo de código em Python:
+frase = "exemplo de string"
+frase_capitalizada = frase.title()
+print(f'Frase capitalizada: "{frase_capitalizada}"')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Frase capitalizada: "Exemplo De String"</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>10. Remover Espaços em Branco no Início e Fim</h2>
+            <p>Escreva um código Python que remova os espaços em branco no início e no final de uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "   Exemplo de string com espaços   "
+print(string.strip())
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Exemplo de string com espaços</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>11. Verificar o código do produto</h2>
+            <p>Escreva um código Python que verifique se o código do produto segue o formato PROD-XXXX, onde XXXX são dígitos de 0 a 9.</p>
+            <pre>
+# Exemplo de código em Python:
+import re
+codigo = "PROD-1234"
+if re.match(r"PROD-\d{4}$", codigo):
+    print("Código válido!")
+else:
+    print("Código inválido!")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Código válido!</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>12. Separar as partes de uma string (placa de carro)</h2>
+            <p>Escreva um código Python que separe as partes de uma string, como a placa de um carro no formato ABC-1234.</p>
+            <pre>
+# Exemplo de código em Python:
+placa = "ABC-1234"
+letras, numeros = placa.split('-')
+print(f'Letras: {letras}, Números: {numeros}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Letras: ABC, Números: 1234</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>13. Imprimir a senha escondida no enigma</h2>
+            <p>Escreva um código Python que extraia a senha escondida na string fornecida.</p>
+            <pre>
+# Exemplo de código em Python:
+senha = "Kg8vlk8jIU7D8nNbd0GG4F2aCa4gnb85oÇAcm9aBmc55mnbtBl39Cvbn3"
+senha_extraida = senha[3:-15:5]
+print(senha_extraida)
+            </pre>
+            <div class="resposta">
+                <p>Resposta: IU7GGF2A5</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>14. Acessar um Caracter Isolado da String</h2>
+            <p>Escreva um código Python que acesse um caractere específico de uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+caracter = string[7]
+print(f'O caractere na posição 7 é: {caracter}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: o</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>15. Obter Substring Usando Slicing</h2>
+            <p>Escreva um código Python que utilize slicing para obter uma parte específica de uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+string = "Exemplo de string"
+substring = string[8:14]
+print(f'A substring é: {substring}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: de st</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>16. Calcular o Perímetro de um Círculo</h2>
+            <p>Escreva um código Python que calcule o perímetro de um círculo, dado seu raio.</p>
+            <pre>
+# Exemplo de código em Python:
+import math
+raio = 5
+perimetro = 2 * math.pi * raio
+print(f'O perímetro do círculo é: {perimetro}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O perímetro do círculo é: 31.41592653589793</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>17. Calcular a Idade em Dias</h2>
+            <p>Escreva um código Python que calcule a idade em dias, dada a idade em anos.</p>
+            <pre>
+# Exemplo de código em Python:
+idade_anos = 25
+idade_dias = idade_anos * 365
+print(f'A idade em dias é: {idade_dias}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A idade em dias é: 9125</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>18. Converter Metros para Centímetros</h2>
+            <p>Escreva um código Python que converta metros para centímetros.</p>
+            <pre>
+# Exemplo de código em Python:
+metros = 5
+centimetros = metros * 100
+print(f'{metros} metros são {centimetros} centímetros.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: 5 metros são 500 centímetros.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>19. Calcular a Área de um Retângulo</h2>
+            <p>Escreva um código Python que calcule a área de um retângulo, dado o comprimento e a largura.</p>
+            <pre>
+# Exemplo de código em Python:
+comprimento = 10
+largura = 5
+area = comprimento * largura
+print(f'A área do retângulo é: {area}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A área do retângulo é: 50</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>20. Programa de boas-vindas</h2>
+            <p>Escreva um código Python que de bom dia, pergunte o nome da pessoa e responda que é um prazer conhecer ela.</p>
+            <pre>
+# Exemplo de código em Python:
+nome = input("Bom dia! Qual é o seu nome? ")
+print(f'Prazer em te conhecer, {nome}!')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Prazer em te conhecer, [nome].</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>21. Verificar se um número é par ou ímpar</h2>
+            <p>Escreva um código Python para verificar se um número fornecido pelo usuário é par ou ímpar.</p>
+            <pre>
+# Exemplo de código em Python:
+numero = int(input("Digite um número: "))
+if numero % 2 == 0:
+    print("O número é par")
+else:
+    print("O número é ímpar")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Depende do número fornecido pelo usuário</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>22. Contar quantos números positivos existem em uma lista</h2>
+            <p>Escreva um código Python para contar quantos números positivos existem em uma lista de números.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [1, -2, 3, -4, 5]
+positivos = len([n for n in numeros if n > 0])
+print(f'Existem {positivos} números positivos na lista.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Existem 3 números positivos na lista.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>23. Calcular o fatorial de um número</h2>
+            <p>Escreva um código Python para calcular o fatorial de um número.</p>
+            <pre>
+# Exemplo de código em Python:
+numero = int(input("Digite um número para calcular o fatorial: "))
+fatorial = 1
+for i in range(1, numero + 1):
+    fatorial *= i
+print(f'O fatorial de {numero} é {fatorial}.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Depende do número fornecido pelo usuário.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>24. Imprimir todos os números de 1 a 100</h2>
+            <p>Escreva um código Python para imprimir todos os números de 1 a 100.</p>
+            <pre>
+# Exemplo de código em Python:
+for i in range(1, 101):
+    print(i)
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O código imprime todos os números de 1 a 100.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>25. Verificar se um número é primo</h2>
+            <p>Escreva um código Python para verificar se um número é primo.</p>
+            <pre>
+# Exemplo de código em Python:
+numero = int(input("Digite um número: "))
+primo = True
+for i in range(2, numero):
+    if numero % i == 0:
+        primo = False
+        break
+if primo and numero > 1:
+    print(f'O número {numero} é primo.')
+else:
+    print(f'O número {numero} não é primo.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Depende do número fornecido pelo usuário.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>26. Contar a quantidade de vogais em uma string</h2>
+            <p>Escreva um código Python para contar quantas vogais existem em uma string fornecida.</p>
+            <pre>
+# Exemplo de código em Python:
+texto = "Python é uma linguagem de programação."
+vogais = "aeiou"
+contador = sum(1 for letra in texto.lower() if letra in vogais)
+print(f'O texto contém {contador} vogais.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O texto contém 11 vogais.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>27. Ordenar uma lista de números</h2>
+            <p>Escreva um código Python para ordenar uma lista de números em ordem crescente.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [5, 2, 8, 1, 3]
+numeros.sort()
+print(f'Lista ordenada: {numeros}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Lista ordenada: [1, 2, 3, 5, 8]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>28. Verificar se uma palavra é palíndroma</h2>
+            <p>Escreva um código Python para verificar se uma palavra é um palíndromo.</p>
+            <pre>
+# Exemplo de código em Python:
+palavra = "arara"
+if palavra == palavra[::-1]:
+    print(f'A palavra "{palavra}" é um palíndromo.')
+else:
+    print(f'A palavra "{palavra}" não é um palíndromo.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A palavra "arara" é um palíndromo.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>29. Substituir caracteres em uma string</h2>
+            <p>Escreva um código Python para substituir um caractere em uma string por outro.</p>
+            <pre>
+# Exemplo de código em Python:
+texto = "Hello, World!"
+novo_texto = texto.replace("o", "0")
+print(novo_texto)
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Hell0, W0rld!</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>30. Calcular a soma de uma lista de números</h2>
+            <p>Escreva um código Python para calcular a soma de uma lista de números.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [1, 2, 3, 4, 5]
+soma = sum(numeros)
+print(f'A soma dos números é: {soma}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A soma dos números é: 15</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>31. Encontrar o maior número em uma lista</h2>
+            <p>Escreva um código Python para encontrar o maior número em uma lista de números.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [1, 2, 3, 4, 5]
+maior_numero = max(numeros)
+print(f'O maior número é: {maior_numero}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O maior número é: 5</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>32. Contar os números pares em uma lista</h2>
+            <p>Escreva um código Python para contar quantos números pares existem em uma lista.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+pares = len([n for n in numeros if n % 2 == 0])
+print(f'Existem {pares} números pares na lista.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Existem 4 números pares na lista.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>33. Remover um item de uma lista</h2>
+            <p>Escreva um código Python para remover um item de uma lista.</p>
+            <pre>
+# Exemplo de código em Python:
+lista = [1, 2, 3, 4, 5]
+lista.remove(3)
+print(f'Lista após remoção: {lista}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Lista após remoção: [1, 2, 4, 5]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>34. Inverter uma String</h2>
+            <p>Escreva um código Python para inverter uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+texto = "Python"
+invertido = texto[::-1]
+print(f'A string invertida é: {invertido}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A string invertida é: nohtyP</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>35. Substituir um item por outro em uma lista</h2>
+            <p>Escreva um código Python para substituir um item em uma lista por outro.</p>
+            <pre>
+# Exemplo de código em Python:
+lista = [1, 2, 3, 4, 5]
+lista[2] = 10
+print(f'Lista após substituição: {lista}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Lista após substituição: [1, 2, 10, 4, 5]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>36. Criar um dicionário</h2>
+            <p>Escreva um código Python para criar um dicionário e imprimir seus valores.</p>
+            <pre>
+# Exemplo de código em Python:
+dicionario = {"nome": "João", "idade": 25, "cidade": "São Paulo"}
+print(f'Dicionário: {dicionario}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Dicionário: {'nome': 'João', 'idade': 25, 'cidade': 'São Paulo'}</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>37. Achar o menor número de uma lista</h2>
+            <p>Escreva um código Python para encontrar o menor número de uma lista.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [10, 20, 5, 15]
+menor_numero = min(numeros)
+print(f'O menor número é: {menor_numero}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O menor número é: 5</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>38. Encontrar a soma de números de uma lista</h2>
+            <p>Escreva um código Python para encontrar a soma de todos os números de uma lista.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [1, 2, 3, 4, 5]
+soma = sum(numeros)
+print(f'A soma dos números é: {soma}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A soma dos números é: 15</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>39. Concatenar duas listas</h2>
+            <p>Escreva um código Python para concatenar duas listas.</p>
+            <pre>
+# Exemplo de código em Python:
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+lista_concatenada = lista1 + lista2
+print(f'Lista concatenada: {lista_concatenada}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Lista concatenada: [1, 2, 3, 4, 5, 6]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>40. Calcular a média de uma lista de números</h2>
+            <p>Escreva um código Python para calcular a média dos números de uma lista.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [2, 4, 6, 8, 10]
+media = sum(numeros) / len(numeros)
+print(f'A média é: {media}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A média é: 6.0</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>41. Contar as ocorrências de um item em uma lista</h2>
+            <p>Escreva um código Python para contar as ocorrências de um item em uma lista.</p>
+            <pre>
+# Exemplo de código em Python:
+lista = [1, 2, 2, 3, 4, 2]
+ocorrencias = lista.count(2)
+print(f'O número 2 aparece {ocorrencias} vezes na lista.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O número 2 aparece 3 vezes na lista.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>42. Remover duplicatas de uma lista</h2>
+            <p>Escreva um código Python para remover os números duplicados de uma lista.</p>
+            <pre>
+# Exemplo de código em Python:
+lista = [1, 2, 2, 3, 4, 4, 5]
+lista_sem_duplicatas = list(set(lista))
+print(f'Lista sem duplicatas: {lista_sem_duplicatas}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Lista sem duplicatas: [1, 2, 3, 4, 5]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>43. Criar uma lista com números de 1 a 100</h2>
+            <p>Escreva um código Python para criar uma lista com números de 1 a 100.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = list(range(1, 101))
+print(f'Lista de números de 1 a 100: {numeros}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A lista contém os números de 1 a 100.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>44. Ordenar uma lista em ordem decrescente</h2>
+            <p>Escreva um código Python para ordenar uma lista de números em ordem decrescente.</p>
+            <pre>
+# Exemplo de código em Python:
+numeros = [1, 4, 3, 2, 5]
+numeros.sort(reverse=True)
+print(f'Lista em ordem decrescente: {numeros}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Lista em ordem decrescente: [5, 4, 3, 2, 1]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>45. Dividir uma lista em duas partes</h2>
+            <p>Escreva um código Python para dividir uma lista ao meio.</p>
+            <pre>
+# Exemplo de código em Python:
+lista = [1, 2, 3, 4, 5, 6]
+metade = len(lista) // 2
+primeira_metade = lista[:metade]
+segunda_metade = lista[metade:]
+print(f'Primeira metade: {primeira_metade}')
+print(f'Segunda metade: {segunda_metade}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Primeira metade: [1, 2, 3], Segunda metade: [4, 5, 6]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>46. Verificar se uma lista é vazia</h2>
+            <p>Escreva um código Python para verificar se uma lista está vazia.</p>
+            <pre>
+# Exemplo de código em Python:
+lista = []
+if not lista:
+    print("A lista está vazia.")
+else:
+    print("A lista não está vazia.")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A lista está vazia.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>47. Verificar se uma chave existe em um dicionário</h2>
+            <p>Escreva um código Python para verificar se uma chave existe em um dicionário.</p>
+            <pre>
+# Exemplo de código em Python:
+dicionario = {"nome": "João", "idade": 25}
+if "nome" in dicionario:
+    print("A chave 'nome' existe no dicionário.")
+else:
+    print("A chave 'nome' não existe no dicionário.")
+            </pre>
+            <div class="resposta">
+                <p>Resposta: A chave 'nome' existe no dicionário.</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>48. Criar uma tupla</h2>
+            <p>Escreva um código Python para criar uma tupla.</p>
+            <pre>
+# Exemplo de código em Python:
+tupla = (1, 2, 3, 4, 5)
+print(f'Tupla: {tupla}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Tupla: (1, 2, 3, 4, 5)</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>49. Desempacotar uma tupla</h2>
+            <p>Escreva um código Python para desempacotar uma tupla.</p>
+            <pre>
+# Exemplo de código em Python:
+tupla = (1, 2, 3)
+a, b, c = tupla
+print(f'Valores desempacotados: {a}, {b}, {c}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Valores desempacotados: 1, 2, 3</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>50. Criar um conjunto</h2>
+            <p>Escreva um código Python para criar um conjunto.</p>
+            <pre>
+# Exemplo de código em Python:
+conjunto = {1, 2, 3, 4, 5}
+print(f'Conjunto: {conjunto}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Conjunto: {1, 2, 3, 4, 5}</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>51. Verificar a interseção de dois conjuntos</h2>
+            <p>Escreva um código Python para verificar a interseção de dois conjuntos.</p>
+            <pre>
+# Exemplo de código em Python:
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {3, 4, 5, 6}
+interseccao = conjunto1 & conjunto2
+print(f'Interseção: {interseccao}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Interseção: {3, 4}</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>52. Criar uma lista de quadrados de números</h2>
+            <p>Escreva um código Python para criar uma lista contendo os quadrados dos números de 1 a 10.</p>
+            <pre>
+# Exemplo de código em Python:
+quadrados = [x ** 2 for x in range(1, 11)]
+print(f'Lista de quadrados: {quadrados}')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: Lista de quadrados: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>53. Criar uma função para somar dois números</h2>
+            <p>Escreva um código Python com uma função que recebe dois números e retorna a soma deles.</p>
+            <pre>
+# Exemplo de código em Python:
+def somar(a, b):
+    return a + b
+print(somar(3, 5))
+            </pre>
+            <div class="resposta">
+                <p>Resposta: 8</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>54. Criar uma função para calcular a área de um círculo</h2>
+            <p>Escreva um código Python com uma função que recebe o raio de um círculo e retorna sua área.</p>
+            <pre>
+# Exemplo de código em Python:
+import math
+def area_circulo(raio):
+    return math.pi * (raio ** 2)
+print(area_circulo(5))
+            </pre>
+            <div class="resposta">
+                <p>Resposta: 78.53981633974483</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>55. Criar uma função para verificar se um número é par</h2>
+            <p>Escreva um código Python com uma função que verifica se um número é par.</p>
+            <pre>
+# Exemplo de código em Python:
+def verificar_par(numero):
+    return numero % 2 == 0
+print(verificar_par(4))
+            </pre>
+            <div class="resposta">
+                <p>Resposta: True</p>
+            </div>
+        </div>
+
+        <div class="exercicio">
+            <h2>56. Contar as palavras em uma string</h2>
+            <p>Escreva um código Python para contar as palavras em uma string.</p>
+            <pre>
+# Exemplo de código em Python:
+texto = "Python é muito divertido"
+palavras = texto.split()
+print(f'O texto contém {len(palavras)} palavras.')
+            </pre>
+            <div class="resposta">
+                <p>Resposta: O texto contém 4 palavras.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
