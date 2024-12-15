@@ -1,8 +1,0 @@
-/meu-projeto
-    /app.py
-    /templates
-        index.html
-    /static (se houver)
-    requirements.txt
-    vercel.json (se houver)
-    Flask==2.0.1  # Ou qualquer versão específica que você esteja usando
