@@ -221,4 +221,259 @@
 
         <a href="/site.html" class="btn">Ver Exercícios em "Python"</a>
 
+        <div class="container">
+            <!-- Introdução sobre Laços -->
+            <div class="introducao" style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #007BFF;">
+                <h2 style="color: #007BFF;">Introdução aos Laços em Python</h2>
+                <p style="font-size: 1.2em;">Em Python, os laços (ou loops) são estruturas que permitem repetir um bloco de código várias vezes. Existem dois tipos principais de laços:</p>
+                <ul style="font-size: 1.1em;">
+                    <li><strong>Laço <code>for</code>:</strong> Utilizado para iterar sobre uma sequência (como uma lista, tupla ou string) ou um intervalo de números.</li>
+                    <li><strong>Laço <code>while</code>:</strong> Executa um bloco de código enquanto uma condição for verdadeira.</li>
+                </ul>
+            </div>
+
+            <!-- Exercícios de Laços -->
+            <h2 class="section-title">Exercícios de Laços em Python</h2>
+            <div class="grid">
+                <!-- Exercício 57 -->
+                <div class="card">
+                    <h2>57. Laço For: Números de 1 a 10</h2>
+                    <p>Escreva um código Python para imprimir os números de 1 a 10 usando um laço for.</p>
+                    <pre>
+# Exemplo de código em Python:
+for i in range(1, 11):
+    print(i)
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: 1 2 3 4 5 6 7 8 9 10</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 58 -->
+                <div class="card">
+                    <h2>58. Laço While: Soma de 1 a 100</h2>
+                    <p>Escreva um código Python para somar todos os números de 1 a 100 usando um laço while.</p>
+                    <pre>
+# Exemplo de código em Python:
+soma = 0
+i = 1
+while i <= 100:
+    soma += i
+    i += 1
+print(f'A soma é: {soma}')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: A soma é: 5050</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 59 -->
+                <div class="card">
+                    <h2>59. Laço For: Números Ímpares</h2>
+                    <p>Escreva um código Python para imprimir os números ímpares entre 1 e 20.</p>
+                    <pre>
+# Exemplo de código em Python:
+for i in range(1, 21, 2):
+    print(i)
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: 1 3 5 7 9 11 13 15 17 19</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 60 -->
+                <div class="card">
+                    <h2>60. Laço For: Contagem de Positivos</h2>
+                    <p>Escreva um código Python para contar números positivos em uma lista.</p>
+                    <pre>
+# Exemplo de código em Python:
+lista = [-1, 2, 3, -4, 5, -6, 7]
+contador = 0
+for num in lista:
+    if num > 0:
+        contador += 1
+print(f'Números positivos: {contador}')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: Números positivos: 4</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 61 -->
+                <div class="card">
+                    <h2>61. Laço While: Fatorial</h2>
+                    <p>Escreva um código Python para calcular o fatorial de um número.</p>
+                    <pre>
+# Exemplo de código em Python:
+numero = 5
+fatorial = 1
+while numero > 1:
+    fatorial *= numero
+    numero -= 1
+print(f'O fatorial é: {fatorial}')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: O fatorial é: 120</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Após os exercícios de laços, adicionar nova seção -->
+            <h2 class="section-title">Exercícios de Manipulação de Dados</h2>
+            <div class="grid">
+                <!-- Exercício 25 -->
+                <div class="card">
+                    <h2>25. Verificar se um número é primo</h2>
+                    <p>Escreva um código Python para verificar se um número é primo.</p>
+                    <pre>
+# Exemplo de código em Python:
+numero = int(input("Digite um número: "))
+primo = True
+for i in range(2, numero):
+    if numero % i == 0:
+        primo = False
+        break
+if primo and numero > 1:
+    print(f'O número {numero} é primo.')
+else:
+    print(f'O número {numero} não é primo.')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: Depende do número fornecido pelo usuário.</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 26 -->
+                <div class="card">
+                    <h2>26. Contar Vogais</h2>
+                    <p>Escreva um código Python para contar quantas vogais existem em uma string.</p>
+                    <pre>
+# Exemplo de código em Python:
+texto = "Python é uma linguagem de programação."
+vogais = "aeiou"
+contador = sum(1 for letra in texto.lower() if letra in vogais)
+print(f'O texto contém {contador} vogais.')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: O texto contém 11 vogais.</p>
+                    </div>
+                </div>
+
+                <!-- Continuar adicionando os exercícios 27-49 seguindo o mesmo padrão -->
+                <!-- Remover exercícios que já existem em outras seções -->
+            </div>
+
+            <!-- Após os exercícios anteriores, adicionar nova seção -->
+            <h2 class="section-title">Exercícios de Funções e Conjuntos</h2>
+            <div class="grid">
+                <!-- Exercício 50 -->
+                <div class="card">
+                    <h2>50. Conjuntos em Python</h2>
+                    <p>Escreva um código Python para criar um conjunto.</p>
+                    <pre>
+# Exemplo de código em Python:
+conjunto = {1, 2, 3, 4, 5}
+print(f'Conjunto: {conjunto}')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: Conjunto: {1, 2, 3, 4, 5}</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 51 -->
+                <div class="card">
+                    <h2>51. Interseção de Conjuntos</h2>
+                    <p>Escreva um código Python para verificar a interseção de dois conjuntos.</p>
+                    <pre>
+# Exemplo de código em Python:
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {3, 4, 5, 6}
+interseccao = conjunto1 & conjunto2
+print(f'Interseção: {interseccao}')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: Interseção: {3, 4}</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 52 -->
+                <div class="card">
+                    <h2>52. Lista de Quadrados</h2>
+                    <p>Escreva um código Python para criar uma lista contendo os quadrados dos números de 1 a 10.</p>
+                    <pre>
+# Exemplo de código em Python:
+quadrados = [x ** 2 for x in range(1, 11)]
+print(f'Lista de quadrados: {quadrados}')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: Lista de quadrados: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 53 -->
+                <div class="card">
+                    <h2>53. Função de Soma</h2>
+                    <p>Escreva um código Python com uma função que recebe dois números e retorna a soma deles.</p>
+                    <pre>
+# Exemplo de código em Python:
+def somar(a, b):
+    return a + b
+print(somar(3, 5))
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: 8</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 54 -->
+                <div class="card">
+                    <h2>54. Área do Círculo</h2>
+                    <p>Escreva um código Python com uma função que recebe o raio de um círculo e retorna sua área.</p>
+                    <pre>
+# Exemplo de código em Python:
+import math
+def area_circulo(raio):
+    return math.pi * (raio ** 2)
+print(area_circulo(5))
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: 78.53981633974483</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 55 -->
+                <div class="card">
+                    <h2>55. Verificação de Par</h2>
+                    <p>Escreva um código Python com uma função que verifica se um número é par.</p>
+                    <pre>
+# Exemplo de código em Python:
+def verificar_par(numero):
+    return numero % 2 == 0
+print(verificar_par(4))
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: True</p>
+                    </div>
+                </div>
+
+                <!-- Exercício 56 -->
+                <div class="card">
+                    <h2>56. Contagem de Palavras</h2>
+                    <p>Escreva um código Python para contar as palavras em uma string.</p>
+                    <pre>
+# Exemplo de código em Python:
+texto = "Python é muito divertido"
+palavras = texto.split()
+print(f'O texto contém {len(palavras)} palavras.')
+                    </pre>
+                    <div class="resposta">
+                        <p>Resposta: O texto contém 4 palavras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
             
